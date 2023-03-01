@@ -56,6 +56,11 @@ For multiple pairs on the same line, separate with semicolon.  Not needed if sep
 
 Above creates a hash table.  Optionally prefix the `@` with `[ordered]` for an ordered dictionary instead.
 
+## Create Filesystem Link
+- Symbolic link (to file or directory): `New-Item -ItemType SymbolicLink -Path "<link>" -Target "<target>"`
+- Directory junction: `New-Item -ItemType Junction -Path "<link>" -Target "<target>"`
+- Hard link (to file only): `New-Item -ItemType HardLink -Path "Link" -Target "Target"`
+
 ## Send Data to the Clipboard
 Pipe data to `Set-Clipboard` (or use the `-Value` option to pass data as an argument).  
 `C:\bin\AtAcctCodec.exe :lEWFIwTYgnU1 | set-clipboard -append`  
