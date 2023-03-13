@@ -1,2 +1,1 @@
-- [PowerShell](PowerShell.md)  
-- [WSL2](WSL2.md)
+See the [Wiki](https://github.com/sonorhcnysa/TechNotes/wiki) section.
